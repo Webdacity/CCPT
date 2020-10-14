@@ -1,0 +1,121 @@
+@import "../global.scss";
+
+.contact-grid {
+    display: grid;
+    grid-template: 1fr 2fr / 60% 40% ;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 3rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-family: $main-font;
+            color: $blue;
+
+            &:after {
+                content: "";
+                width: 1.5rem;
+                height: 3px;
+                background-color: $light-blue;
+                display: block;
+                margin-top: 0.25rem;
+            }
+        }
+
+        a {
+            color: $grey;
+            font-weight: 500;
+            margin: 0.25rem 0;
+
+            &:hover {
+                color: $light-blue;
+                padding-left: 0.1rem;
+            }
+        }
+    }
+
+    .form {
+        background-color: $blue;
+        width: 80%;
+        grid-area: 1 / 2 / span 2 / span 1;
+        z-index: 5;
+        padding: 2rem 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h4 {
+            font-weight: 600;
+            font-family: $main-font;
+            color: $white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            input, textarea {
+                width: 100%;
+                background-color: transparent;
+                padding: 0.5rem 0;
+                outline: none;
+                resize: none;
+                border: none;
+                border-bottom: 1px solid $white;
+                margin: 0.75rem 0;
+                font-family: $main-font;
+                color: $white;
+
+                &::placeholder {
+                    color: $light-grey;
+                    font-weight: 300;
+                }
+            }
+
+            textarea {
+                height: 5rem;
+            }
+
+            button {
+                align-self: flex-end;
+                margin-top: 1rem;
+                font-size: 0.7rem;
+                font-weight: 600;
+                background-color: transparent;
+                border: 1.5px solid $white;
+                padding: 0.5rem 1.5rem;
+                color: $white;
+                outline: none;
+                cursor: pointer;
+                transition: 0.3s ease-out;
+
+                &:hover {
+                    background-color: $white;
+                    color: $blue;
+                }
+            }
+
+        }
+    }
+
+    .map {
+        grid-area: 2 / 1 / span 1 / span 2;
+
+        iframe {
+            width: 100%;
+            height: 80%;
+            border: none;
+        }
+    }
+}
