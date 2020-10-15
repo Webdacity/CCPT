@@ -1,0 +1,21 @@
+[{
+    "name": "HVAC",
+    "description": "Controls and Electrical",
+    "image": "hvac"
+}, {
+    "name": "Consulting",
+    "description": "Control System Design",
+    "image": "consulting"
+}, {
+    "name": "System Integration",
+    "description": "PLC Programming / SCADA / Distributed Control Systems (SEIMENS)",
+    "image": "system-integration"
+}, {
+    "name": "Maintenance Contracts ",
+    "description": "Control system upgrades, spares and support on all products ",
+    "image": "maintenance"
+}, {
+    "name": "Panel Building ",
+    "description": "Design, procurement, consultation, testing, installation and commissioning.",
+    "image": "panel-building"
+}]

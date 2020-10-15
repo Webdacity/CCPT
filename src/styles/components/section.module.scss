@@ -3,6 +3,10 @@
 section {
     padding: 3rem 0;
 
+    &.dark {
+        background-color: $light-grey;
+    }
+
     .section-heading {
         display: flex;
         align-items: center;
