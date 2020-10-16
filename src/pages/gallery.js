@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from "gatsby"
 
 // Components
 import Layout from "../components/Layout";
@@ -20,9 +21,16 @@ export default function gallery() {
 
 
             <Section headingBig="Our previous work">
-
+                <div className="grid">
+                </div>
             </Section>
 
+            <LinkBlock
+                linkTo="/contact"
+                linkText="Contact Us"
+            >
+                Looking for experienced engineers for your next control panel project?
+            </LinkBlock>
         </Layout>
     )
 }

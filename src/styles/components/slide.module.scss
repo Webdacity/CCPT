@@ -1,0 +1,71 @@
+@import "../global.scss";
+
+.slick-slide {
+    height:1000px;
+ }
+
+.slide {
+    height: 75vh;
+    position: relative;
+
+    &.two {
+        background-image: url("../../assets/images/slider/2.jpg");
+
+        .info {
+            left: 60%;
+        }
+    }
+
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+  
+
+    .info {
+        background-color: rgba(16,25,37,0.85);
+        width: 40%;
+        height: 100%;
+        padding: 1rem 4rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+
+        h1 {
+            font-family: $heading-font;
+            color: $white;
+            font-weight: 500;
+            font-size: 1.75rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        p {
+            color: $light-grey;
+            font-weight: 300;
+            margin: 1.1rem 0;
+        }
+
+        button {
+            background-color: transparent;
+            border: 2px solid $light-blue;
+            margin-top: 1rem;
+            align-self: start;
+              
+            &:hover {
+                background-color: $light-blue;
+                transition: 0.3s ease-out;
+            }
+        
+            &:focus {
+                outline: none;
+            }
+
+        }
+        
+    }
+}

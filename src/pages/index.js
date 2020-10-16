@@ -6,9 +6,11 @@ import Img from 'gatsby-image';
 import Layout from "../components/Layout";
 import LinkBlock from "../components/LinkBlock";
 import Section from "../components/Section";
+import HomeSlider from "../components/HomeSlider"
 
 // Styles, Images, Fonts
 import styles from "../styles/pages/index.module.scss";
+
 
 export default function Home({ data }) {
   return (
@@ -19,6 +21,9 @@ export default function Home({ data }) {
         canonical: "/"
       }}
     >
+
+      <HomeSlider />
+
       <Section headingBig="Who are We?"
         theme="dark"
       >
