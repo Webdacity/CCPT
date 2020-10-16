@@ -12,7 +12,7 @@ export default function Slide(props) {
             query SlideImages{
                 one: file(relativePath: { eq: "slider/1.jpg" }) {
                 childImageSharp {
-                fluid(maxWidth: 1920,quality: 100) {
+                fluid(maxWidth: 1200,quality: 80, jpegProgressive: true) {
                     ...GatsbyImageSharpFluid
                     ...GatsbyImageSharpFluid_withWebp
                 }
@@ -20,7 +20,7 @@ export default function Slide(props) {
                 }
                  two: file(relativePath: { eq: "slider/2.jpg" }) {
                 childImageSharp {
-                fluid(maxWidth: 1920,quality: 100) {
+                fluid(maxWidth: 1200,quality: 80, jpegProgressive: true) {
                     ...GatsbyImageSharpFluid
                     ...GatsbyImageSharpFluid_withWebp
                 }
@@ -28,7 +28,7 @@ export default function Slide(props) {
                 }
                 three: file(relativePath: { eq: "slider/3.jpg" }) {
                 childImageSharp {
-                fluid(maxWidth: 1920, quality: 100) {
+                fluid(maxWidth: 1200, quality: 80, jpegProgressive: true) {
                     ...GatsbyImageSharpFluid
                     ...GatsbyImageSharpFluid_withWebp
                 }

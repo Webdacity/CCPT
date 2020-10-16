@@ -10,6 +10,18 @@ import Section from "../components/Section";
 import styles from "../styles/pages/gallery.module.scss"
 
 export default function gallery() {
+
+    const Gallery = (props) => {
+        let rows = []
+        for (let i = 1; i <= 10; i++) {
+            rows.push(
+                <div key={i}>
+                    <img src={require(`../assets/images/gallery/${i}.jpg`)} />
+                </div>
+            )
+        }
+        return rows
+    }
     return (
         <Layout
             pageMeta={{
@@ -21,7 +33,8 @@ export default function gallery() {
 
 
             <Section headingBig="Our previous work">
-                <div className="grid">
+                <div className={styles.grid}>
+                    <Gallery />
                 </div>
             </Section>
 
