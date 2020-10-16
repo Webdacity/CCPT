@@ -2,7 +2,7 @@
 
 .contact-grid {
     display: grid;
-    grid-template: 1fr 2fr / 60% 40% ;
+    grid-template: 1fr 2fr / 60% 40%;
     padding-bottom: 2rem;
     padding-top: 3rem;
 
@@ -10,6 +10,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-bottom: 3rem;
+        padding-right: 1.5rem;
 
         div {
             display: flex;
@@ -41,6 +42,10 @@
                 padding-left: 0.1rem;
             }
         }
+
+        @media (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     .form {
@@ -65,7 +70,8 @@
             justify-content: center;
             align-items: flex-start;
 
-            input, textarea {
+            input,
+            textarea {
                 width: 100%;
                 background-color: transparent;
                 padding: 0.5rem 0;
@@ -105,7 +111,14 @@
                     color: $blue;
                 }
             }
+        }
 
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            grid-area: unset;
         }
     }
 
@@ -117,5 +130,32 @@
             height: 80%;
             border: none;
         }
+
+        iframe:last-child {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            grid-area: unset;
+            height: 60vh;
+            margin-top: 2rem;
+
+            iframe:last-child {
+                display: block;
+            }
+
+            iframe:first-child {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        grid-template: 1fr 1fr / 50% 50%;
+    }
+
+    @media (max-width: 768px) {
+        grid-template: auto / 1fr;
+        padding-top: 1rem;
     }
 }

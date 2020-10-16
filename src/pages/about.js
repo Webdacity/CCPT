@@ -1,4 +1,7 @@
 import React from 'react';
+import { graphql } from "gatsby";
+import Img from 'gatsby-image';
+
 
 // Components
 import Layout from "../components/Layout";
@@ -7,10 +10,10 @@ import Section from "../components/Section";
 
 // Styles, Images, Fonts
 import styles from "../styles/pages/about.module.scss";
-import CasperImage from "../assets/images/team/Casper.jpg";
-import ThembalamiImage from "../assets/images/team/Thembalami.jpg";
 
-export default function about() {
+
+export default function about({ data }) {
+
     return (
         <Layout
             pageMeta={{
@@ -75,7 +78,9 @@ export default function about() {
 
                     <div className={styles.teamGrid}>
                         <div className={styles.teamImage}>
-                            <img src={CasperImage} alt="" />
+                            <Img fluid={data.casper.childImageSharp.fluid}
+                                style={{ width: "90%" }}
+                            />
                         </div>
                         <div className={styles.teamText}>
                             <h2><span>Casper</span> Ncube</h2>
@@ -92,7 +97,9 @@ export default function about() {
 
                     <div className={styles.teamGrid}>
                         <div className={styles.teamImage}>
-                            <img src={ThembalamiImage} alt="" />
+                            <Img fluid={data.thembalami.childImageSharp.fluid}
+                                style={{ width: "90%" }}
+                            />
                         </div>
                         <div className={styles.teamText}>
                             <h2><span>Thembalami</span> Sibanda</h2>
@@ -118,3 +125,23 @@ export default function about() {
         </Layout>
     )
 }
+
+export const query = graphql`
+  query AboutTeamImages{
+    casper: file(relativePath: { eq: "team/Casper.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 80) {
+          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    thembalami: file(relativePath: { eq: "team/Thembalami.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, quality: 80) {
+          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+}`

@@ -27,7 +27,7 @@
     .grid {
         margin-top: 3rem;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 2rem;
 
         .service {
@@ -45,6 +45,26 @@
                 color: $light-blue;
                 font-size: 1.1rem;
             }
+
+            .image {
+                @media (max-width: 768px) {
+                    width: 80%;
+                    margin: auto;
+                    display: block;
+                }
+
+                @media (max-width: 576px) {
+                    width: 70%;
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
         }
     }
 

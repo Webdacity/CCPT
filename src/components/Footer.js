@@ -42,7 +42,7 @@ export default function Footer() {
                         </a>
                         <a href="https://goo.gl/maps/4vf5TWhTquBbXe2BA" target="blank">
                             <i className="icon-pin"></i>
-                        5 Buketraube Crescent, Saxenburg <br />
+                        5 Buketraube Crescent, Saxenburg
                             Business Park 2, Blackheath, 7580
                         </a>
                     </div>

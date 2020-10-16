@@ -12,7 +12,7 @@ import styles from "../styles/pages/gallery.module.scss"
 export default function gallery() {
 
     const Gallery = (props) => {
-        let rows = []
+        let rows = [];
         for (let i = 1; i <= 10; i++) {
             rows.push(
                 <div key={i}>

@@ -49,10 +49,6 @@ export default function services() {
                     <ul>
                         <li>
                             <i className="icon-square"></i>
-                            Food &amp; Beverage Manufacturers
-                        </li>
-                        <li>
-                            <i className="icon-square"></i>
                             Mining: Land and Sea
                         </li>
                         <li>
@@ -86,6 +82,10 @@ export default function services() {
                         <li>
                             <i className="icon-square"></i>
                             Steel
+                        </li>
+                        <li>
+                            <i className="icon-square"></i>
+                            Food &amp; Beverage Manufacturers
                         </li>
                         <li>
                             <i className="icon-square"></i>

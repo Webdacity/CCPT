@@ -53,22 +53,31 @@ export default function Home({ data }) {
           <div className={styles.grid}>
 
             <div className={styles.service}>
-              <Img fluid={data.software.childImageSharp.fluid} />
+              <div className={styles.image}>
+                <Img fluid={data.software.childImageSharp.fluid} />
+              </div>
+
               <h5>PLC Software Engineering</h5>
             </div>
 
             <div className={styles.service}>
-              <Img fluid={data.turnkey.childImageSharp.fluid} />
+              <div className={styles.image}>
+                <Img fluid={data.turnkey.childImageSharp.fluid} />
+              </div>
               <h5>Turnkey Projects</h5>
             </div>
 
             <div className={styles.service}>
-              <Img fluid={data.integration.childImageSharp.fluid} />
+              <div className={styles.image}>
+                <Img fluid={data.integration.childImageSharp.fluid} />
+              </div>
               <h5>System Integration</h5>
             </div>
 
             <div className={styles.service}>
-              <Img fluid={data.maintenance.childImageSharp.fluid} />
+              <div className={styles.image}>
+                <Img fluid={data.maintenance.childImageSharp.fluid} />
+              </div>
               <h5>Electrical Maintenance</h5>
             </div>
 

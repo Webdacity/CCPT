@@ -31,7 +31,7 @@ export default function contact() {
                         <div>
                             <h4>Our Address</h4>
                             <a href="https://goo.gl/maps/4vf5TWhTquBbXe2BA" target="blank">
-                                5 Buketraube Crescent, Saxenburg <br />
+                                5 Buketraube Crescent, Saxenburg
                                 Business Park 2, Blackheath, 7580
                             </a>
                         </div>
@@ -48,6 +48,7 @@ export default function contact() {
                     </div>
                     <div className={styles.map}>
                         <iframe src="https://snazzymaps.com/embed/266348" ></iframe>
+                        <iframe src="https://snazzymaps.com/embed/268114" ></iframe>
                     </div>
                 </div>
             </Section>

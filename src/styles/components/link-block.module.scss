@@ -15,27 +15,40 @@
 
         .text {
             width: 70%;
-    
+
             p {
                 color: $white;
-                font-size: 1.1rem;  
-              }
+                font-size: 1.1rem;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
-    
+
         .link {
-           text-align: center;
-           width: 30%;
+            text-align: center;
+            width: 30%;
 
-           button:hover {
-               background-color: transparent;
-           }
+            button:hover {
+                background-color: transparent;
+            }
 
-           a:hover {
-               border: 2px solid white;
-               background-color: transparent;
-               color: $white !important;
-           }
+            a:hover {
+                border: 2px solid white;
+                background-color: transparent;
+                color: $white !important;
+            }
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem 1.5rem;
         }
     }
-
 }
