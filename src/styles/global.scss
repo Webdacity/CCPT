@@ -5,15 +5,8 @@ $light-blue: #00a0ca;
 $white: #ffffff;
 $light-grey: #e8e8e8;
 $grey: #444444;
-$heading-font: Tomorrow,
-Tahoma,
-Geneva,
-sans-serif;
-$main-font: Roboto,
-Tahoma,
-Geneva,
-sans-serif;
-
+$heading-font: Tomorrow, Tahoma, Geneva, sans-serif;
+$main-font: Roboto, Tahoma, Geneva, sans-serif;
 
 html,
 body {
@@ -34,11 +27,11 @@ body {
 
 a {
     text-decoration: none;
-    transition: .3s ease-out;
-    -webkit-transition: .3s ease-out;
-    -moz-transition: .3s ease-out;
-    -ms-transition: .3s ease-out;
-    -o-transition: .3s ease-out;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
 }
 
 div {
@@ -63,8 +56,7 @@ div {
     }
 }
 
-
-// Container 
+// Container
 
 .container {
     width: 100%;
@@ -83,8 +75,8 @@ div {
 
 @media (min-width: 768px) {
     .container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         max-width: 720px;
     }
 }
@@ -100,7 +92,6 @@ div {
         max-width: 1140px;
     }
 }
-
 
 // Buttons
 
@@ -130,14 +121,14 @@ div {
 
     &.white {
         background-color: $white;
-         
+
         a {
             color: $blue;
         }
 
         &.light-text {
             a {
-                color: $light-blue
+                color: $light-blue;
             }
         }
     }
@@ -152,7 +143,6 @@ div {
     }
 }
 
-
 // Pace
 .pace {
     -webkit-pointer-events: none;
@@ -160,13 +150,13 @@ div {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
-  
-  .pace-inactive {
+}
+
+.pace-inactive {
     display: none;
-  }
-  
-  .pace .pace-progress {
+}
+
+.pace .pace-progress {
     background: $light-blue;
     position: fixed;
     z-index: 2000;
@@ -174,4 +164,16 @@ div {
     right: 100%;
     width: 100%;
     height: 2px;
-  }
+}
+
+//   Navbar
+.mobile-nav-active {
+    .inner {
+        display: flex !important;
+    }
+
+    .mobile-icon {
+        z-index: 200;
+        color: $white;
+    }
+}

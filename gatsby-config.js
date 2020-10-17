@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "CCPT | Cape Control Panel Technology",
-        short_name: "Webdacity",
+        short_name: "CCPT",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#ffffff",

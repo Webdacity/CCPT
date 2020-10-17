@@ -2,33 +2,44 @@ import React from 'react';
 import { Link } from "gatsby";
 
 // Styles, Images, Fonts
-import styles from "../styles/components/header.module.scss"
+import styles from "../styles/components/header.module.scss";
 import NavbarLogo from "../assets/images/logos/ccpt/logo-full.svg";
 
 export default function Header() {
+
+    const handleNavClick = () => {
+        const nav = document.getElementById("nav");
+        nav.classList.toggle("mobile-nav-active")
+    }
+
     return (
         <div>
             <header>
-                <nav>
+                <nav id="nav">
                     <Link to="/" className={styles.logo}>
-                        <img src={NavbarLogo} alt="Webdacity Navbar Logo" />
+                        <img src={NavbarLogo} alt="CCPT Navbar Logo" />
                     </Link>
-                    <div className={styles.list}>
-                        <Link to="/" className={styles.item}>
-                            Home
+                    <div className={`inner ${styles.inner}`} >
+                        <div className={styles.list}>
+                            <Link to="/" className={styles.item}>
+                                Home
+                            </Link>
+                            <Link to="/about" className={styles.item}>
+                                About
                         </Link>
-                        <Link to="/about" className={styles.item}>
-                            About
+                            <Link to="/services" className={styles.item}>
+                                Services
+                            </Link>
+                            <Link to="/gallery" className={styles.item}>
+                                Gallery
+                            </Link>
+                            <Link to="/contact" className={styles.item}>
+                                Contact
                         </Link>
-                        <Link to="/services" className={styles.item}>
-                            Services
-                        </Link>
-                        <Link to="/gallery" className={styles.item}>
-                            Gallery
-                        </Link>
-                        <Link to="/contact" className={styles.item}>
-                            Contact
-                        </Link>
+                        </div>
+                    </div>
+                    <div className={`mobile-icon ${styles.mobileIcon}`} onClick={handleNavClick}>
+                        &#x2630;
                     </div>
                 </nav>
             </header>
