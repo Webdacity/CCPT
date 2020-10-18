@@ -10,6 +10,9 @@ export default function Header() {
     const handleNavClick = () => {
         const nav = document.getElementById("nav");
         nav.classList.toggle("mobile-nav-active")
+
+        const body = document.getElementsByTagName("BODY")[0];
+        body.classList.toggle("no-scroll");
     }
 
     return (
@@ -20,6 +23,9 @@ export default function Header() {
                         <img src={NavbarLogo} alt="CCPT Navbar Logo" />
                     </Link>
                     <div className={`inner ${styles.inner}`} >
+                        <div className={`navbar-close ${styles.navbarClose}`} onClick={handleNavClick}>
+                            &#10005;
+                        </div>
                         <div className={styles.list}>
                             <Link to="/" className={styles.item}>
                                 Home
