@@ -38,7 +38,7 @@ export default function contact() {
                     </div>
                     <div className={styles.form}>
                         <h4>Send us a Message</h4>
-                        <form data-netlify="true">
+                        <form data-netlify="true" name="contact-form">
                             <input type="text" name="Name" placeholder="Name" />
                             <input type="email" name="Email" placeholder="Email" />
                             <input type="tel" name="Phone" placeholder="Phone" />

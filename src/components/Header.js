@@ -45,7 +45,9 @@ export default function Header() {
                         </div>
                     </div>
                     <div className={`mobile-icon ${styles.mobileIcon}`} onClick={handleNavClick}>
-                        &#x2630;
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </nav>
             </header>
