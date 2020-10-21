@@ -18,7 +18,7 @@ export default function about({ data }) {
         <Layout
             pageMeta={{
                 title: "About | CCPT",
-                description: "CCPT offers turnkey solutions for specialized power and control panel building.",
+                description: "Learn more about our history and our team.",
                 canonical: "/about"
             }}
         >

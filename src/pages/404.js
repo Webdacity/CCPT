@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import Layout from "../components/Layout";
+import Section from "../components/Section"
 
 // Styles, Images, Fonts
 import styles from "../styles/pages/404.module.scss"
@@ -17,7 +18,10 @@ export default function PageNotFound() {
             }}
         >
 
-
+            <section className={styles.section}>
+                <h1>Page not Found</h1>
+                <h4>The page you are looking for does not exist</h4>
+            </section>
 
         </Layout>
     )

@@ -26,7 +26,7 @@ export default function gallery() {
         <Layout
             pageMeta={{
                 title: "Gallery | CCPT",
-                description: "CCPT offers turnkey solutions for specialized power and control panel building.",
+                description: "View the previous work we've done.",
                 canonical: "/gallery"
             }}
         >

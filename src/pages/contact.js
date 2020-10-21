@@ -12,7 +12,7 @@ export default function contact() {
         <Layout
             pageMeta={{
                 title: "Contact | CCPT",
-                description: "CCPT offers turnkey solutions for specialized power and control panel building.",
+                description: "Get in touch with us to start a new project.",
                 canonical: "/contact"
             }}
         >

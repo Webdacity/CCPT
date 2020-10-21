@@ -1,0 +1,18 @@
+@import "../global.scss";
+
+.section {
+    min-height: 60vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: $blue;
+    }
+
+    h4 {
+        color: $light-blue;
+    }
+}

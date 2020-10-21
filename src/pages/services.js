@@ -18,7 +18,7 @@ export default function services() {
         <Layout
             pageMeta={{
                 title: "Services | CCPT",
-                description: "CCPT offers turnkey solutions for specialized power and control panel building.",
+                description: "View which services we provide and the industries we service.",
                 canonical: "/services"
             }}
         >
