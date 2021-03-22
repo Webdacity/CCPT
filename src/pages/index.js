@@ -29,8 +29,7 @@ export default function Home({ data }) {
       >
         <div className={styles.about}>
           <p>
-            We are a young and dynamic company with years of experience
-            building specialised power and control panels.
+            We are a young and dynamic company with years of experience building specialised power and control panels.
             <span></span>
             Cape Control Panel Technology manufactures a full range of electrical panels for almost any application,
             we also specialize in electrical reticulation for industrial and commercial projects.
