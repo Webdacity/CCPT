@@ -32,16 +32,19 @@ export default function Header() {
                             </Link>
                             <Link to="/about" className={styles.item}>
                                 About
-                        </Link>
+                            </Link>
                             <Link to="/services" className={styles.item}>
                                 Services
                             </Link>
                             <Link to="/gallery" className={styles.item}>
                                 Gallery
                             </Link>
+                            <Link to="/projects" className={styles.item}>
+                                Projects
+                            </Link>
                             <Link to="/contact" className={styles.item}>
                                 Contact
-                        </Link>
+                            </Link>
                         </div>
                     </div>
                     <div className={`mobile-icon ${styles.mobileIcon}`} onClick={handleNavClick}>

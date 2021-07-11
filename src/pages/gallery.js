@@ -13,15 +13,16 @@ export default function gallery() {
 
     const Gallery = (props) => {
         let rows = [];
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 1; i <= 21; i++) {
             rows.push(
-                <div key={i}>
+                <div key={i} className={styles.image}>
                     <img src={require(`../assets/images/gallery/${i}.jpg`)} />
                 </div>
             )
         }
         return rows
     }
+
     return (
         <Layout
             pageMeta={{
